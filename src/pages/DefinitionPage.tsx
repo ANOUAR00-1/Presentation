@@ -46,13 +46,20 @@ export default function DefinitionPage() {
       </div>
 
       {/* Header */}
-      <section className="pt-20 pb-12 px-6 max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-6">
-          Comment Bien Écouter ?
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Écouter vraiment, c'est oublier un moment ses propres idées pour vraiment comprendre l'autre.
-        </p>
+      <section className="relative pt-20 pb-12 px-6 max-w-5xl mx-auto text-center bg-gradient-to-br from-violet-500/10 via-cyan-500/10 to-indigo-500/10 backdrop-blur-xl rounded-3xl border border-white/20 shadow-2xl shadow-violet-500/20 overflow-hidden mb-16">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-cyan-600/5 rounded-3xl" />
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-violet-400/20 to-cyan-400/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-br from-cyan-400/20 to-indigo-400/20 rounded-full blur-2xl" />
+
+        <div className="relative z-10">
+          <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-6">
+            Comment Bien Écouter ?
+          </h1>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Écouter vraiment, c'est oublier un moment ses propres idées pour vraiment comprendre l'autre.
+          </p>
+        </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-6 pb-24 space-y-24">
@@ -68,7 +75,7 @@ export default function DefinitionPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`group bg-card border ${pillar.border} rounded-2xl p-8 hover:shadow-xl transition-all duration-300`}
+                className={`group relative bg-white/60 backdrop-blur-md border border-white/30 rounded-2xl p-8 hover:shadow-2xl shadow-xl shadow-slate-200/50 hover:shadow-violet-500/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden`}
               >
                 <div className="md:flex gap-8 items-start">
                   <div className={`w-16 h-16 rounded-2xl ${pillar.bg} ${pillar.color} flex items-center justify-center shrink-0 mb-6 md:mb-0 group-hover:scale-110 transition-transform`}>
@@ -98,9 +105,11 @@ export default function DefinitionPage() {
         </section>
 
         {/* Comparison Table */}
-        <section className="bg-white rounded-3xl p-8 md:p-12 border border-border shadow-sm">
-          <h3 className="text-2xl font-display font-bold mb-8 text-center">Entendre vs Écouter</h3>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-0 md:divide-x divide-border">
+        <section className="relative bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/30 shadow-2xl shadow-slate-200/50 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-cyan-500/5 rounded-3xl" />
+          <div className="relative z-10">
+            <h3 className="text-2xl font-display font-bold mb-8 text-center">Entendre vs Écouter</h3>
+            <div className="grid md:grid-cols-2 gap-8 md:gap-0 md:divide-x divide-white/30">
             <div className="space-y-6 px-4">
               <div className="flex items-center gap-3 mb-4">
                 <Ear className="w-8 h-8 text-muted-foreground" />
@@ -135,6 +144,7 @@ export default function DefinitionPage() {
               </ul>
             </div>
           </div>
+        </div>
         </section>
 
 
@@ -148,7 +158,7 @@ export default function DefinitionPage() {
           </Link>
           <Link to="/techniques">
             <Button size="lg" className="group btn-primary px-8">
-              Page 3 : Techniques
+              Techniques
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

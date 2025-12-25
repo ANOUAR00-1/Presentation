@@ -66,13 +66,20 @@ export default function TechniquesPage() {
       </div>
 
       {/* Header */}
-      <section className="pt-20 pb-12 px-6 max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-6">
-          4 Techniques Simples
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Des méthodes concrètes pour mieux écouter au quotidien.
-        </p>
+      <section className="relative pt-20 pb-12 px-6 max-w-5xl mx-auto text-center bg-gradient-to-br from-violet-500/10 via-cyan-500/10 to-indigo-500/10 backdrop-blur-xl rounded-3xl border border-white/20 shadow-2xl shadow-violet-500/20 overflow-hidden mb-16">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-cyan-600/5 rounded-3xl" />
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-violet-400/20 to-cyan-400/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-br from-cyan-400/20 to-indigo-400/20 rounded-full blur-2xl" />
+
+        <div className="relative z-10">
+          <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-6">
+            4 Techniques Simples
+          </h1>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Des méthodes concrètes pour mieux écouter au quotidien.
+          </p>
+        </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-6 pb-24 space-y-16">
@@ -87,7 +94,7 @@ export default function TechniquesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-md transition-shadow"
+                className="group relative bg-white/60 backdrop-blur-md border border-white/30 rounded-2xl overflow-hidden hover:shadow-2xl shadow-xl shadow-slate-200/50 hover:shadow-violet-500/20 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="p-6 md:p-8 flex gap-6 items-start">
                   <div className={`w-12 h-12 rounded-xl ${tech.bg} ${tech.color} flex items-center justify-center shrink-0 mt-1`}>
