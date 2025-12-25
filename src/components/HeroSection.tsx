@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MessageSquare } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import GridScan from "./GridScan";
 
@@ -52,21 +52,6 @@ const HeroSection = () => {
 
             <div className="section-container relative z-10">
                 <div className="max-w-5xl mx-auto text-center">
-                    {/* Topic badge */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="inline-flex items-center gap-3 px-6 py-3 glass-card mb-12"
-                    >
-                        <MessageSquare className="w-5 h-5 text-slate-700" />
-                        <span className="text-sm font-semibold text-slate-700">Parler entre humains</span>
-                        <motion.div
-                            animate={{ scale: [1, 1.3, 1] }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                            className="w-2 h-2 rounded-full bg-mint"
-                        />
-                    </motion.div>
 
                     {/* Main title */}
                     <motion.h1
@@ -83,10 +68,9 @@ const HeroSection = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-14 leading-relaxed"
+                        className="text-2xl md:text-3xl font-light text-slate-700 max-w-4xl mx-auto mb-14 leading-relaxed"
                     >
-                        L'art de comprendre au-delà des mots. Maîtrisez la compétence
-                        fondamentale qui transforme chaque conversation en connexion authentique.
+                        <span className="text-gradient font-medium">L'art de comprendre</span> au-delà des mots. Maîtrisez la compétence fondamentale qui transforme chaque conversation en connexion authentique.
                     </motion.p>
 
                     {/* Stats row */}
