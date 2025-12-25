@@ -68,39 +68,12 @@ const HeroSection = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="text-2xl md:text-3xl font-light text-slate-700 max-w-4xl mx-auto mb-14 leading-relaxed"
+                        className="text-2xl md:text-3xl font-bold text-slate-700 max-w-4xl mx-auto mb-14 leading-relaxed"
                     >
                         <span className="text-gradient font-medium">L'art de comprendre</span> au-delà des mots. Maîtrisez la compétence fondamentale qui transforme chaque conversation en connexion authentique.
                     </motion.p>
 
-                    {/* Stats row */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex flex-wrap justify-center gap-10 mb-16"
-                    >
-                        {[
-                            { value: "85%", label: "des conflits évités" },
-                            { value: "3x", label: "meilleure compréhension" },
-                            { value: "100%", label: "applicable partout" },
-                        ].map((stat, index) => (
-                            <motion.div
-                                key={stat.label}
-                                whileHover={{ scale: 1.05 }}
-                                initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ delay: 0.7 + index * 0.1 }}
-                                className="text-center group cursor-default smooth-scale"
-                            >
-                                <div className="text-4xl md:text-5xl font-bold text-slate-900 font-display human-pulse group-hover:scale-110 transition-transform">
-                                    {stat.value}
-                                </div>
-                                <div className="text-sm text-slate-600 mt-2">{stat.label}</div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-
+                    
                     {/* CTA Button */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

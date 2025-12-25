@@ -119,9 +119,9 @@ export default function PratiquePage() {
         {/* Quiz Access Button - End of Student B Section */}
         <section className="bg-gradient-to-r from-indigo-100 to-indigo-50 dark:from-indigo-900/30 dark:to-indigo-900/10 rounded-3xl p-10 md:p-16 text-center space-y-6 border border-indigo-200 dark:border-indigo-800">
           <ClipboardCheck className="w-16 h-16 mx-auto text-indigo-600" />
-          <h2 className="text-3xl font-display font-bold">Fin de la Partie B</h2>
+          <h2 className="text-3xl font-display font-bold">Testez vos connaissances</h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-            Vous avez terminé les 3 pages de l'Étudiant B. Testez vos connaissances avec 8 questions.
+            Testez vos connaissances avec 8 questions sur ce que vous avez appris.
           </p>
           <Link to="/quiz-partie-2">
             <Button size="lg" className="px-10 py-6 text-lg mt-4 bg-indigo-600 hover:bg-indigo-700">

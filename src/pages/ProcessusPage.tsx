@@ -116,9 +116,9 @@ export default function ProcessusPage() {
         {/* Quiz Access Button - End of Student A Section */}
         <section className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-3xl p-10 md:p-16 text-center space-y-6 border border-primary/20">
           <ClipboardCheck className="w-16 h-16 mx-auto text-primary" />
-          <h2 className="text-3xl font-display font-bold">Fin de la Partie A</h2>
+          <h2 className="text-3xl font-display font-bold">Testez vos connaissances</h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-            Vous avez terminé les 4 pages de l'Étudiant A. Testez vos connaissances avec 8 questions.
+            Testez vos connaissances avec 8 questions sur ce que vous avez appris.
           </p>
           <Link to="/quiz-partie-1">
             <Button size="lg" className="px-10 py-6 text-lg mt-4">
@@ -138,7 +138,7 @@ export default function ProcessusPage() {
           </Link>
           <Link to="/benefices">
             <Button size="lg" className="group bg-indigo-600 hover:bg-indigo-700 text-white px-8">
-              Page 5 : Bénéfices (Étudiant B)
+              Bénéfices
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
